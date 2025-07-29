@@ -1,35 +1,21 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { Heading } from './components/Heading';
 
-function App() {
-  const [count, setCount] = useState(0)
+import './styles/theme.css';
+import './styles/global.css';
 
-  return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+
+export function App(){
+    return(
+        <>
+            <Heading>Olá mundo 1</Heading>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex atque sequi eligendi delectus cumque quasi! Dignissimos, tempora distinctio harum libero atque, numquam eaque necessitatibus architecto vel voluptates aperiam qui nihil.
+                Maiores magni quod saepe tempore eveniet aliquam? Ratione, qui dolorum voluptatem dolores non explicabo voluptatum eum cumque dolor sed error sint veritatis quam eveniet hic consequuntur aut vitae saepe odio!
+                Vitae, eveniet? Quis ad fuga illo deserunt, debitis cumque facilis ex eos maiores nam autem, repellendus harum voluptatum provident cupiditate molestiae expedita nisi porro vitae quidem. Ad architecto molestiae consequatur.
+                Itaque fugiat aliquid ducimus ipsam dolore facilis, maxime dolorum distinctio incidunt debitis provident nihil molestiae nisi magnam quae reiciendis velit ex voluptatum. Eius molestiae doloremque iste voluptates alias provident libero.
+                Minima architecto rem hic. Tempore, ipsam hic iste vitae assumenda, porro quibusdam nisi aut deleniti facilis voluptatibus quidem commodi illum harum deserunt, repudiandae nulla distinctio et enim nostrum culpa! Quo.
+            </p>
+        </>
+    );
 }
 
-export default App
